@@ -22,10 +22,9 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
-    libraryTarget: "module",
+    library: "CosmicTigerUI",
+    libraryTarget: "umd",
+    globalObject: "this",
     clean: true,
-  },
-  experiments: {
-    outputModule: true,
   },
 };
