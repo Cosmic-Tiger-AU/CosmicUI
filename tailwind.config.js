@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  content: {
+    relative: true,
+    files: ["./src/components/**/*.{js,jsx,ts,tsx}"],
+  },
+  // dark mode by data-mode attribute
+  darkMode: '[data-mode="dark"]',
   theme: {
     extend: {},
   },
