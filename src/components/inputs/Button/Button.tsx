@@ -23,7 +23,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     } = props;
 
     return (
-      <button {...rest} ref={ref} className={cn(className, "dark:text-white")}>
+      <button
+        {...rest}
+        ref={ref}
+        className={cn(
+          className,
+          "dark:text-white bg-orange-500 px-3 py-2 rounded-md text-sm font-medium uppercase hover:bg-orange-600 transition-colors duration-100",
+        )}>
         {icon && iconPosition === "left" && (
           <FontAwesomeIcon icon={icon} className="mr-2" />
         )}

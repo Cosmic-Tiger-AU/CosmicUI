@@ -5,7 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import del from "rollup-plugin-delete";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
-import dts from "rollup-plugin-dts";
+import preserveDirectives from "rollup-plugin-preserve-directives";
 
 export default [
   {
@@ -13,13 +13,19 @@ export default [
     output: [
       {
         format: "cjs",
-        file: "dist/index.js",
-        sourcemap: true,
+        dir: "dist",
+        entryFileNames: "[name].cjs",
+        sourcemap: false,
+        preserveModules: true,
+        exports: "named",
+        preserveModulesRoot: "src",
       },
       {
         format: "esm",
-        file: "dist/index.es.js",
-        sourcemap: true,
+        dir: "dist",
+        sourcemap: false,
+        preserveModules: true,
+        preserveModulesRoot: "src",
       },
     ],
     plugins: [
@@ -33,14 +39,7 @@ export default [
         minimize: true,
       }),
       del({ targets: "dist/**/*" }),
+      preserveDirectives(),
     ],
-  },
-  {
-    input: "src/index.ts",
-    output: {
-      file: "dist/index.d.ts",
-      format: "es",
-    },
-    plugins: [dts()],
   },
 ];

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "sourceMap": true,
+    "sourceMap": false,
     "esModuleInterop": true,
     "noImplicitAny": true,
     "module": "ES2020",
