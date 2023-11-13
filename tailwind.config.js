@@ -5,7 +5,7 @@ export default {
     files: ["./src/components/**/*.{js,jsx,ts,tsx}"],
   },
   // dark mode by data-mode attribute
-  darkMode: '[data-mode="dark"]',
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
     extend: {},
   },
