@@ -3,5 +3,6 @@
   "useTabs": false,
   "semi": true,
   "singleQuote": false,
-  "bracketSameLine": true
+  "bracketSameLine": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

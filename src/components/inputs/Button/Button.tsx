@@ -4,13 +4,16 @@ import {
 } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import { cn } from "../../../utils/cn";
+import { VariantProps } from "class-variance-authority";
+import { cvaButton } from "./button.cva";
 
 export type ButtonProps = {
   onClick?: () => void;
   children: React.ReactNode;
   icon?: FontAwesomeIconProps["icon"];
   iconPosition?: "left" | "right";
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & VariantProps<typeof cvaButton> &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
@@ -19,6 +22,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       icon,
       iconPosition = "right",
+      variant,
+      size,
       ...rest
     } = props;
 
@@ -27,8 +32,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...rest}
         ref={ref}
         className={cn(
+          cvaButton({ variant, size }),
+          "flex items-center justify-center",
           className,
-          "dark:text-white bg-orange-500 px-3 py-2 rounded-md text-sm font-medium uppercase hover:bg-orange-600 transition-colors duration-100",
         )}>
         {icon && iconPosition === "left" && (
           <FontAwesomeIcon icon={icon} className="mr-2" />
