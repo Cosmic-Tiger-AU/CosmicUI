@@ -5,7 +5,7 @@ export const cvaButton = cva(
   {
     variants: {
       variant: {
-        plain: "text-black bg-white border border-gray-300 hover:bg-gray-50",
+        plain: "text-black bg-white border border-gray-300 hover:bg-black/5",
 
         primary: "bg-brand-primary hover:bg-brand-primary/90 text-white",
         secondary: "bg-brand-secondary hover:bg-brand-secondary/90 text-white",
