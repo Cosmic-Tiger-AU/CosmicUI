@@ -12,28 +12,20 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#5900F2",
-          darker: "#4400A6",
-          alt: {
-            DEFAULT: "#CD00A2",
-            darker: "#B8008A",
-          },
+          primary: "#5900F2",
+          secondary: "#CD00A2",
         },
         error: {
           DEFAULT: "#E02424",
-          darker: "##9B1C1C",
         },
         success: {
           DEFAULT: "#34D399",
-          darker: "#059669",
         },
         warning: {
           DEFAULT: "#F59E0B",
-          darker: "#D97706",
         },
         info: {
           DEFAULT: "#3B82F6",
-          darker: "#1D4ED8",
         },
       },
     },
