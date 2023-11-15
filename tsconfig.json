@@ -9,14 +9,17 @@
     "target": "ES6",
     "jsx": "react",
     "declaration": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "./src/**/*"
   ],
   "exclude": [
     "node_modules",
-    "**/*.stories.ts",
-    "**/*.spec.tsx"
   ]
 }

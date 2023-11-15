@@ -2,12 +2,12 @@ import {
   FontAwesomeIcon,
   FontAwesomeIconProps,
 } from "@fortawesome/react-fontawesome";
-import * as React from "react";
-import { cn } from "../../../utils/cn";
 import { VariantProps } from "class-variance-authority";
+import * as React from "react";
+import { cn } from "~/utils/cn";
 import { cvaButton } from "./button.cva";
 
-export type ButtonProps = {
+type ButtonProps = {
   onClick?: () => void;
   children: React.ReactNode;
   icon?: FontAwesomeIconProps["icon"];
@@ -15,7 +15,7 @@ export type ButtonProps = {
 } & VariantProps<typeof cvaButton> &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (props, ref) => {
     const {
       children,
@@ -51,3 +51,5 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = "Button";
+
+export { Button, ButtonProps };
