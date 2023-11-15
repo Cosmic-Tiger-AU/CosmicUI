@@ -28,7 +28,27 @@ export default {
           DEFAULT: "#3B82F6",
         },
       },
+      card: {
+        backgroundColor: "#fff",
+        borderColor: "#E5E7EB",
+        textColor: "#111827",
+        dark: {
+          backgroundColor: "#111827",
+          borderColor: "#374151",
+          textColor: "#fff",
+        },
+      },
+      input: {
+        backgroundColor: "#fff",
+        borderColor: "#E5E7EB",
+        textColor: "#111827",
+        dark: {
+          backgroundColor: "#111827",
+          borderColor: "#374151",
+          textColor: "#fff",
+        },
+      },
     },
   },
-  plugins: [require("@headlessui/tailwindcss")],
+  plugins: [],
 };
