@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Args passed to this are:
+# \$1 - Previous HEAD
+# \$2 - New HEAD
+# \$3 - 1 if checking out a branch, 0 if checking out something else (e.g., a file)
+
+if [ -n "\$3" ] && [ "\$3" = "1" ]; then
+    echo 'Branch checkout detected. Running PNPM...'
+    pnpm install -r
+fi
