@@ -29,13 +29,15 @@
     "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.0.0"
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "peerDependencies": {
     "@fortawesome/react-fontawesome": ">=0.2 <0.3",
     "react": ">=18 <19",
     "react-dom": ">=18 <19",
-    "tailwindcss": ">=3 <4"
+    "tailwindcss": ">=3 <4",
+    "tailwindcss-animate": ">1 <1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",

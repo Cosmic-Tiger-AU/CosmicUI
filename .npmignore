@@ -1,0 +1,8 @@
+src
+node_modules
+.env
+docs
+.husky
+.github
+coverage
+.storybook
