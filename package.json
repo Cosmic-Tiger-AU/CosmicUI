@@ -14,13 +14,13 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "prepare": "husky install",
     "format": "prettier --write ./src/**/*.{ts,tsx,js,jsx,json,md}",
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "postinstall": "husky install"
+    "build-storybook": "storybook build"
   },
   "files": [
     "dist"
