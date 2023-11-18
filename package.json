@@ -5,7 +5,7 @@
     "url": "git+https://github.com/Cosmic-Tiger-AU/ui.git"
   },
   "publishConfig": {
-    "@Cosmic-Tiger-AU:registry": "https://npm.pkg.github.com"
+    "@cosmic-tiger-au:registry": "https://npm.pkg.github.com"
   },
   "version": "0.0.1",
   "description": "",

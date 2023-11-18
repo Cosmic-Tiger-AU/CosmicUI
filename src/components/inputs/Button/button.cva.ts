@@ -5,15 +5,14 @@ export const cvaButton = cva(
   {
     variants: {
       variant: {
-        plain: "text-black bg-white border border-gray-300 hover:bg-black/5",
-
-        primary: "bg-brand-primary hover:bg-brand-primary/90 text-white",
-        secondary: "bg-brand-secondary hover:bg-brand-secondary/90 text-white",
-
-        error: "bg-error hover:bg-error/90 text-white",
-        success: "bg-success hover:bg-success/90 text-white",
+        default: "hover:bg-accent hover:text-accent-foreground",
+        primary: "bg-primary text-primary-foreground hover:bg-primary/90",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        danger: "bg-danger text-danger-foreground hover:bg-danger/90",
+        success: "bg-green-600/90 hover:bg-green-600/80 text-white",
         warning: "bg-warning hover:bg-warning/90 text-white",
-        info: "bg-info hover:bg-info/90 text-white",
+        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         sm: "h-9 rounded-md px-3",
@@ -23,7 +22,7 @@ export const cvaButton = cva(
       },
     },
     defaultVariants: {
-      variant: "plain",
+      variant: "default",
       size: "md",
     },
   },
