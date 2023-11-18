@@ -9,6 +9,12 @@ import preserveDirectives from "rollup-plugin-preserve-directives";
 
 export default [
   {
+    onwarn: function (warning, warn) {
+      // Supress error for "use client" directive used by Next.js
+      if (!warning.message.includes('"use client"')) {
+        warn(warning);
+      }
+    },
     input: "src/index.ts", // path to your main TS file, change accordingly
     output: [
       {
@@ -32,14 +38,16 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript(),
+      typescript({
+        tsconfig: "./tsconfig.build.json",
+      }),
       terser(),
       postcss({
         plugins: [], // Add postcss plugins here
         minimize: true,
       }),
       del({ targets: "dist/**/*" }),
-      preserveDirectives(),
+      preserveDirectives({ supressPreserveModulesWarning: true }),
     ],
   },
 ];

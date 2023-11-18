@@ -1,10 +1,12 @@
+"use client";
+
 import {
   FontAwesomeIcon,
   FontAwesomeIconProps,
 } from "@fortawesome/react-fontawesome";
 import { VariantProps } from "class-variance-authority";
 import * as React from "react";
-import { cn } from "~/utils/cn";
+import { cn } from "~/lib/cn";
 import { cvaButton } from "./button.cva";
 
 type ButtonProps = {

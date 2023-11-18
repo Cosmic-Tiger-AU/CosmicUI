@@ -1,6 +1,6 @@
 import { VariantProps } from "class-variance-authority";
 import * as React from "react";
-import { cn } from "~/utils/cn";
+import { cn } from "~/lib/cn";
 import { cvaTextBox } from "./textbox.cva";
 
 type TextBoxProps = {
