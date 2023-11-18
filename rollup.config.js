@@ -16,6 +16,13 @@ export default [
       }
     },
     input: "src/index.ts", // path to your main TS file, change accordingly
+    external: [
+      "react",
+      "react-dom",
+      "react-hook-form",
+      "@hookform/resolvers",
+      "zod",
+    ],
     output: [
       {
         format: "cjs",
