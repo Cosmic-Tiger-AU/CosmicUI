@@ -19,27 +19,6 @@ type ButtonProps = {
 } & VariantProps<typeof cvaButton> &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-/*
-        <button
-        {...rest}
-        ref={ref}
-        className={cn(
-          cvaButton({ variant, size }),
-          "flex items-center justify-center",
-          className,
-        )}>
-        {icon && iconPosition === "left" && (
-          <FontAwesomeIcon icon={icon} className="mr-2" />
-        )}
-        <span className="uppercase">{children}</span>
-        {icon && iconPosition === "right" && (
-          <span className="ml-2">
-            <FontAwesomeIcon icon={icon} />
-          </span>
-        )}
-      </button>
-      */
-
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
