@@ -1,5 +1,5 @@
 {
-  "name": "@Cosmic-Tiger-AU/ui",
+  "name": "@cosmic-tiger-au/ui",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cosmic-Tiger-AU/ui.git"
@@ -7,7 +7,7 @@
   "publishConfig": {
     "@Cosmic-Tiger-AU:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

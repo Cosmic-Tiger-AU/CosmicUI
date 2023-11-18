@@ -16,7 +16,6 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@Cosmic-Tiger-AU"
           cache: "pnpm"
-      - run: npm install --global pnpm@latest
       - run: pnpm install --frozen-lockfile
       - run: pnpm run test
       - run: pnpm run build
