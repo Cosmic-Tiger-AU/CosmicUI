@@ -1,3 +1,4 @@
 export * from "./Button";
-export * from "./Textbox";
+export * from "./TextArea";
+export * from "./TextBox";
 export * from "./Select";
