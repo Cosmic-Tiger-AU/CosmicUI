@@ -5,13 +5,13 @@
 ### High Priority
 
 - [x] Button
-- [ ] Text Box
-- [ ] Text Area
+- [x] Text Box
+- [x] Text Area
 - [ ] Checkbox
-- [ ] Select 🥺
+- [x] Select 🥺
 - [ ] Badge
-- [ ] Card
-- [ ] Alert
+- [x] Card
+- [x] Alert
 
 ### Low Priority
 
