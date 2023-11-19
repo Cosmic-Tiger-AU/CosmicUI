@@ -7,7 +7,7 @@
   "publishConfig": {
     "@cosmic-tiger-au:registry": "https://npm.pkg.github.com"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Internal Use Tool - UI components for Cosmic Tiger",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
