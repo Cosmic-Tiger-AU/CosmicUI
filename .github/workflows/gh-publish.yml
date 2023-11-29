@@ -43,6 +43,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - name: release
-        run: pnpm semantic-release
+        run: |
+          echo "@cosmic-tiger-au:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_TOKEN }}" >> .npmrc
+          pnpm semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
