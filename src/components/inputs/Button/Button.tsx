@@ -11,7 +11,6 @@ import { cvaButton } from "./button.cva";
 import { Slot } from "@radix-ui/react-slot";
 
 type ButtonProps = {
-  onClick?: () => void;
   children: React.ReactNode;
   icon?: FontAwesomeIconProps["icon"];
   iconPosition?: "left" | "right";
