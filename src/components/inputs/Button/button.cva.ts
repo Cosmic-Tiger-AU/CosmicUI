@@ -6,13 +6,14 @@ export const cvaButton = cva(
     variants: {
       variant: {
         default: "hover:bg-accent hover:text-accent-foreground",
+        outline:
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         primary: "bg-primary text-primary-foreground hover:bg-primary/90",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         danger: "bg-danger text-danger-foreground hover:bg-danger/90",
         success: "bg-green-600/90 hover:bg-green-600/80 text-white",
         warning: "bg-warning hover:bg-warning/90 text-white",
-        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         sm: "h-9 rounded-md px-3",
