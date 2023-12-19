@@ -7,10 +7,12 @@ const cvaAlert = cva(
       variant: {
         default: "bg-background text-foreground",
         error:
-          "border-danger/50 text-danger dark:border-danger [&>svg]:text-danger",
-        warning: "border-orange-500/75 text-orange-500 [&>svg]:text-orange-500",
-        info: "border-blue-500/75 text-blue-500 [&>svg]:text-blue-500",
-        success: "border-green-500/75 text-green-500 [&>svg]:text-green-500",
+          "border-danger/50 text-danger-foreground dark:border-danger [&>svg]:text-danger",
+        warning:
+          "border-warning/75 text-warning-foreground [&>svg]:bg-warning-foreground",
+        info: "border-info/75 text-info-foreground [&>svg]:text-info",
+        success:
+          "border-success/75 text-success-foreground [&>svg]:text-success-foreground",
       },
     },
     defaultVariants: {
