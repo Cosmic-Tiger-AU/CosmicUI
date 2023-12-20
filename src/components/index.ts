@@ -1,4 +1,4 @@
 export * from "./inputs";
 export * from "./display";
-export * from "./misc";
+export * from "./utility";
 export * from "./layout";

@@ -19,7 +19,9 @@ export default [
     external: [
       "@fortawesome/free-solid-svg-icons",
       "@hookform/resolvers",
+      "date-fns",
       "react",
+      "react-date-picker",
       "react-dom",
       "react-hook-form",
       "zod",
