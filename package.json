@@ -115,9 +115,7 @@
     "vite-tsconfig-paths": "^4.2.3"
   },
   "pnpm": {
-    "patchedDependencies": {
-      "rollup-plugin-preserve-directives@0.2.0": "patches/rollup-plugin-preserve-directives@0.2.0.patch"
-    }
+    "patchedDependencies": {}
   },
   "config": {
     "commitizen": {
